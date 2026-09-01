@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/profile-header.svg" width="100%" alt="Omar Martinez — iOS engineer and product builder">
+  <img src="./assets/profile-header.svg" width="100%" alt="Omar Martinez — iOS developer">
 </p>
 
 <p align="center">
@@ -10,15 +10,15 @@
   <a href="https://martinezstudio.dev/"><strong>Martinez Studio</strong></a>
 </p>
 
-## Thoughtful iPhone products, end to end
+## About me
 
-I am an iOS engineer focused on turning real workflow problems into calm, reliable products. I enjoy owning the full path from product framing and interface design through architecture, platform integration, testing, and release preparation.
+I am an iOS developer. I enjoy taking an app from an early idea through design, development, testing, and preparation for release.
 
-My current work centers on **SwiftUI**, **local-first data**, **audio and media workflows**, and **privacy-aware monetization**. I care about clear state ownership, purposeful interfaces, and technical decisions that remain understandable as a product grows.
+I care about making software easy to understand, dependable, and respectful of the people using it. I like learning how a problem works, deciding what the app should do, and then working through the details needed to build it well.
 
-> Most production application code is kept in private repositories. The public work below documents the product, architecture, tradeoffs, and quality strategy in detail. Private source access and a code walkthrough can be shared with hiring teams on request.
+> Most of my application source code is kept in private repositories. The public case study below explains what I built, why I made certain choices, and how I tested the work. Source access and a code walkthrough can be shared with hiring teams on request.
 
-## Featured work — Ostinova
+## Current project: Ostinova
 
 <table>
   <tr>
@@ -26,54 +26,43 @@ My current work centers on **SwiftUI**, **local-first data**, **audio and media 
       <img src="https://raw.githubusercontent.com/omar-martinez-dev/ostinova-showcase/main/assets/screenshots/metronome.jpg" width="260" alt="Ostinova metronome running on iPhone">
     </td>
     <td width="66%" valign="top">
-      <h3>A local-first practice companion for musicians</h3>
-      <p>Ostinova brings metronome timing, reusable practice regimens, scale playback, recording, and review into one focused iPhone workflow.</p>
-      <p><strong>What I designed and engineered:</strong></p>
+      <h3>An iPhone practice app for musicians</h3>
+      <p>Ostinova combines a metronome, reusable practice routines, scales, and audio or video recording in one app.</p>
+      <p><strong>My work on the project includes:</strong></p>
       <ul>
-        <li>SwiftUI feature architecture with explicit state ownership</li>
-        <li>SwiftData persistence and filesystem-backed media</li>
-        <li>AVFoundation audio, camera, recording, and playback</li>
-        <li>StoreKit 2 purchases and privacy-aware AdMob behavior</li>
-        <li>Unit, integration, UI smoke, and launch-performance coverage</li>
+        <li>Planning the app and designing its main screens</li>
+        <li>Building the practice, timing, scale, and recording features</li>
+        <li>Handling saved data, purchases, advertising, and privacy choices</li>
+        <li>Writing automated tests and checking the app on different device sizes</li>
       </ul>
       <p>
-        <a href="https://github.com/omar-martinez-dev/ostinova-showcase"><strong>Explore the engineering case study →</strong></a>
+        <a href="https://github.com/omar-martinez-dev/ostinova-showcase"><strong>Read the Ostinova case study →</strong></a>
       </p>
     </td>
   </tr>
 </table>
 
-### Decisions worth discussing
+## What I work with
 
-- **Deterministic playback:** editable practice plans compile into immutable snapshots before a session starts, keeping live timing isolated from later UI changes.
-- **Local-first storage:** searchable metadata lives in SwiftData while large audio and video payloads stay in the filesystem, balancing queryability with storage performance.
-- **One privacy authority:** Apple’s ATT status directly determines AdMob configuration, avoiding contradictory controls and applying the user’s choice before future ad requests.
+My current iOS work uses **Swift**, **SwiftUI**, **SwiftData**, **AVFoundation**, **StoreKit**, and Apple’s testing tools. These are tools I use in my current work; they are not the limit of the kinds of applications or systems I want to work on.
 
-## Engineering focus
+## How I approach a project
 
-| Product and interface | Architecture and data | Platform and quality |
-|---|---|---|
-| SwiftUI · Observation | Swift 6 · SwiftData | AVFoundation · StoreKit 2 |
-| Accessibility · design systems | Local-first persistence | Swift Testing · XCTest |
-| Product framing · interaction design | Protocol boundaries · test doubles | ATT · Google Mobile Ads |
+- Understand the problem before deciding on the solution.
+- Keep screens and actions clear for the person using the app.
+- Break large features into smaller parts that can be changed and tested safely.
+- Test important behavior, including permissions, failures, and smaller devices.
+- Explain decisions and tradeoffs so other people can review the work.
 
-## How I work
+## Current focus
 
-- Start with the point where the user’s workflow is interrupted.
-- Keep ownership and data flow explicit enough to explain on a whiteboard.
-- Hide platform frameworks behind focused boundaries only where testing or change requires it.
-- Treat privacy, accessibility, loading, and failure states as product behavior.
-- Validate hardware-dependent behavior on real devices instead of assuming the simulator is sufficient.
-
-## Currently
-
-- Preparing Ostinova for release-quality real-device validation.
-- Expanding coverage for audio routes, interruptions, capture, and long-running sessions.
-- Documenting architecture and tradeoffs so product and engineering decisions are reviewable.
+- Testing Ostinova on real devices and preparing it for release.
+- Improving accessibility, reliability, and uncommon error cases.
+- Continuing to build iOS projects and document what I learn from them.
 
 <p align="center">
-  <strong>Interested in iOS engineering opportunities with product-focused teams.</strong><br>
+  <strong>Open to iOS development opportunities.</strong><br>
   <a href="https://omar-martinez-dev.github.io/">View my portfolio</a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/omar-martinez-dev/ostinova-showcase">Review the case study</a>
+  <a href="https://github.com/omar-martinez-dev/ostinova-showcase">Read the case study</a>
 </p>
